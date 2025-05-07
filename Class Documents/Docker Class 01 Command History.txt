@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1  docker --version
     2  clear
     3  yum install docker -y
@@ -144,4 +145,152 @@
   144  docker ps
   145  docker logs -f mario-game
   146  clear
+=======
+1  docker --version
+    2  clear
+    3  yum install docker -y
+    4  systemctl enable docker
+    5  systemctl start docker
+    6  docker --version
+    7  clear
+    8  docker pull ubuntu
+    9  docker images
+   10  docker image ls
+   11  docker run -dit ubuntu
+   12  docker ps
+   13  docker ps -a
+   14  docker ps
+   15  clear
+   16  docker ps
+   17  docker attach serene_payne
+   18  docker ps
+   19  docker attach serene_payne
+   20  docker ps
+   21  docker ps -a
+   22  docker rm serene_payne
+   23  docker ps -a
+   24  docker images
+   25  docker rmi ubuntu
+   26  docker images
+   27  docker
+   28  clear
+   29  docker --version
+   30  docker --help
+   31  clear
+   32  docker info
+   33  clear
+   34  ls
+   35  docker images
+   36  docker image ls
+   37  docker ps
+   38  docker ps -a
+   39  docker pull ubuntu
+   40  docker images
+   41  docker run ubuntu
+   42  docker ps
+   43  docker -dit ubuntu
+   44  docker run -dit ubuntu
+   45  docker ps
+   46  docker attach sad_driscoll
+   47  docker ps 
+   48  docker attach sad_driscoll
+   49  docker ps
+   50  docker ps -a
+   51  clear
+   52  docker run -dit ubuntu
+   53  docker ps 
+   54  docker ps -a
+   55  docker exec -it infallible_yonath /bin/bash
+   56  docker ps
+   57  docker exec -it infallible_yonath ls
+   58  docker ps
+   59  docker logs infallible_yonath
+   60  docker inspect infallible_yonath
+   61  docker stats infallible_yonath
+   62  docker os
+   63  docker ps
+   64  docker top infallible_yonath
+   65  docker stop infallible_yonath
+   66  docker ps
+   67  docker ps -a
+   68  docker start sad_driscsool
+   69  docker start sad_driscsoll
+   70  docker start sad_driscoll
+   71  docker ps
+   72  docker restart sad_driscoll
+   73  docker ps
+   74  docker pause sad_driscoll
+   75  docker ps
+   76  docker top infallible_yonath
+   77  docker unpause sad_driscoll
+   78  docker top infallible_yonath
+   79  docker ps
+   80  docker ps
+   81  docker ps
+   82  docker ps
+   83  docker top infallible_yonath
+   84  docker ps
+   85  docker ps
+   86  docker exec -it sad_driscoll ls
+   87  docker kill dri_scool
+   88  docker ps
+   89  docker kill sad_driscool
+   90  docker ps
+   91  docker kill clever_dirac
+   92  docker run -dit ubuntu 
+   93  docker ps
+   94  docker kill sleepy_zhukovsky
+   95  docker ps
+   96  docker ps -a
+   97  docker rm sleepy_zhukovsky
+   98  docker ps -a
+   99  docker run -dit ubuntu
+  100  docker ps
+  101  docker rename silly_maxwell SSG_ubuntu
+  102  docker ps
+  103  docker export SSG_ubuntu > file.tar
+  104  ls
+  105  docker import file.tar
+  106  ls
+  107  docker ps
+  108  clear
+  109  docker systm df
+  110  docker system df
+  111  docker system prune
+  112  docker ps -a
+  113  docker ps
+  114  clear
+  115  docker images
+  116  docker rmi ubuntu
+  117  docker rmi 602eb6fb314b
+  118  docker ps
+  119  docker kill SSg_ubuntu
+  120  docker kill SSG_ubuntu
+  121  docker kill sad_driscoll
+  122  clear
+  123  docker images
+  124  docker rm SSG_ubuntu
+  125  docker rm sad_driscoll
+  126  docker ps
+  127  docker ps -a
+  128  docker rmi ubuntu:latest
+  129  docker images
+  130  clear
+  131  docker pull manojupadhya11/mario-game:latest
+  132  docker image
+  133  docker images
+  134  docker run -dit -p 8080:8080 --name mario-game manojupadhya11/mario-game
+  135  docker ps
+  136  docker ps
+  137  docker ps -a
+  138  docker stop mario-game
+  139  docker rm mario-game
+  140  docker run -dit -p 8080:80 --name mario-game manojupadhya11/mario-game
+  141  docker ps
+  142  docker login
+  143  lear
+  144  docker ps
+  145  docker logs -f mario-game
+  146  clear
+>>>>>>> 18698f8592903f8a41ffd18758334743caee7e01
   147  history
