@@ -1,0 +1,111 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+
+
+
+
+---------------------Explanation below -------------
+🔍 What Each Part Means:
+
+🧠 apiVersion: apps/v1
+This tells Kubernetes which version of the API to use.
+
+apps/v1 is the correct version for Deployment.
+
+📦 kind: Deployment
+Defines the type of Kubernetes resource you're creating.
+
+In this case, it's a Deployment, which manages Pods for you.
+
+🏷️ metadata
+Basic identifying info.
+
+metadata:
+  name: nginx-deployment
+  
+name: This is the name of the Deployment, not the pod.
+Kubernetes will use this name for the Deployment object.
+
+
+⚙️ spec
+The specification of what the Deployment should do.
+
+🔗 selector:
+selector:
+  matchLabels:
+    app: nginx
+	
+This tells the Deployment how to find the Pods it manages.
+
+It matches Pods with the label app: nginx.
+
+Note: This must match the labels under template.metadata.labels.
+
+
+📦 template:
+This defines the Pod template — i.e., what the Pods managed by this Deployment will look like.
+
+template:
+  metadata:
+    labels:
+      app: nginx
+
+
+Labels on the Pods themselves. Needed to match the selector.
+
+
+🚀 spec inside template:
+Defines the actual Pod configuration — what container to run.
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      ports:
+        - containerPort: 80
+		
+containers: A list of containers to run inside each pod.
+
+name: The container name.
+
+image: The Docker image to run (in this case, the official NGINX image).
+
+ports: Which port the container exposes.
+
+💡 Summary:
+This Deployment will:
+Create 1 Pod running NGINX.
+Keep that Pod running (restarts it if it crashes).
+Use the latest NGINX image from Docker Hub.
+Label the Pod with app: nginx so it's easy to manage and find.
+
+
+
+--------Sample Pod.yaml file---------------
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
