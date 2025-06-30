@@ -29,7 +29,7 @@
     - Understand Behavior:
     - Improve Systems:
 
-![why-monitoring-why-observability](images/why-monitoring-why-observability.png)
+![why-monitoring-why-observability](https://github.com/manojupadhya11/SSG_Team_Training/blob/main/Observability/why-monitoring-why-observability.png)
 
 
 ## 🆚 What is the Exact Difference Between Monitoring and Observability?
