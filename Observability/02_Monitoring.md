@@ -95,7 +95,7 @@ eksctl create nodegroup --cluster=observability \
                         --node-private-networking
 
 # Update ./kube/config file
-aws eks update-kubeconfig --name observability
+aws eks update-kubeconfig --name observability --region <region-name>
 ```
 
 ### 🧰 Step 2: Install kube-prometheus-stack
@@ -109,7 +109,7 @@ helm repo update
 kubectl create ns monitoring
 ```
 ```bash
-cd day-2
+
 
 helm install monitoring prometheus-community/kube-prometheus-stack \
 -n monitoring \
